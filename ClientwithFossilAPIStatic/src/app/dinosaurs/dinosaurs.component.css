@@ -1,0 +1,101 @@
+.card-main{
+	position: relative;
+	width:250px;
+	height: 320px;
+	background-color: #6D7272;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+.card{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+	transition-delay: 0.5s;
+	/*background-color: #313737;*/
+	padding: 3px;
+	border-radius: 12px;
+}
+.card:hover{
+	transform: rotateY(180deg);
+}
+.card-front{
+	position: absolute;
+	width: 98%;
+	height: 98%;
+	backface-visibility: hidden;
+	/*background-color: #495454;*/
+	color:#000000;
+	border-radius: 12px;
+	padding: 2px;
+}
+.card-back{
+	position: absolute;
+	width: 98%;
+	height: 98%;
+	backface-visibility: hidden;
+	background-color: #414948;
+	color:#E2E2E2;
+	transform: rotateY(180deg);
+	border-radius: 20px;
+}
+.img-wrap{
+	width: 100%;
+	height: 80%;
+	padding: 0;
+	margin: 0;
+}
+.img-wrap > img{
+	width: 100%;
+	height: 100%;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-radius: 12px;
+}
+.dname{
+	text-align: center;
+}
+.info-wrap > h5{
+	text-align: center;
+}
+.inf-box{
+	width: 95%;
+	height: 20%;
+	margin-left: 9px;
+	font-size: 8pt;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 3px;
+}
+.era{
+	text-align: center;
+	font-size: 9pt;
+}
+.din-inf a{
+	text-decoration: none;
+	color: #FBFBFB;
+	font-size: 20px;
+	border: 2px solid #FFCDAB;
+	position: relative;
+	transition: 1s;
+	font-weight: 300;
+	letter-spacing: -2px;
+	transition: all 0.8s;
+}
+.din-inf a:hover{
+	font-weight: 700;
+	letter-spacing: 10px;
+	border: 4px solid #C05F1E;
+}
+.din-inf{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0;
+}
+.container{
+	text-align: center;
+}
+

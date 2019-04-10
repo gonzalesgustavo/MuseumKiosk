@@ -1,0 +1,54 @@
+<!-- <div class="card-main">
+	<div class="card">
+		<div class="card-front">
+			<p>front</p>
+		</div>
+		<div class="card-back">
+			<p>back</p>
+		</div>
+	</div>
+</div> -->
+
+<div class="container">
+	<h1>Fossil Display Information Booth</h1>
+	<sub>To interact hover over the cards</sub>
+	<br>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-3 col-md-offset-2" *ngFor="let dinos of allDinos">
+			<div class="card-main">
+				<div class="card">
+					<div class="card-front">
+						<div class="img-wrap">
+							<img src="{{ dinos.imageUrl }}" alt="">
+						</div>
+						<h2 class="dname">{{ dinos.name }}</h2>
+					</div>
+					<div class="card-back">
+						<div class="info-wrap">
+							<div class="stand">
+									<h5>{{ dinos.name }}</h5>
+							<hr>
+							<div class="inf-box">
+								<div>
+									<p>Species: <br>{{ dinos.species }}</p>
+								</div>
+								<div>
+									<p>Phylum: {{ dinos.phylum }}</p>
+								</div>
+								<div>
+									<p>Order: {{ dinos.taxonomicOrder }}</p>		
+								</div>
+							</div>
+							<p class="era">Era: <br>{{ dinos.era }}</p>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+	</div>
+</div>
